@@ -12,9 +12,5 @@ let make = (~heroes: list(hero)) => {
 
   let heroesList = List.map(toElement, heroes);
 
-  <div>
-    <table>
-      <tbody> {heroesList |> Array.of_list |> ReasonReact.array} </tbody>
-    </table>
-  </div>;
+  <div> <table> <tbody> {heroesList |> arrEl} </tbody> </table> </div>;
 };
