@@ -1,4 +1,4 @@
 open Utils;
 
 [@react.component]
-let make = () => "404 not found :(" |> str;
+let make = () => <div> {"404 not found :(" |> str} </div>;

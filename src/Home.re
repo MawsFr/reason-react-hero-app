@@ -2,19 +2,17 @@ open Hero;
 open Utils;
 
 [@react.component]
-let make = (~heroes: list(hero)) => {
+let make = () => {
+  let heroes = HeroService.getAll();
+
   let toElement = hero =>
     <tr key={hero.id |> strInt}>
-      <td> {hero.name ++ " " |> str} </td>
-      <td> <Link name="Show " href={hero.id |> strInt} /> </td>
+      <td> {hero.name |> str} </td>
+      <td> <Link name="Show" href={(hero.id |> strInt) ++ "/show"} /> </td>
       <td> <Link name="Edit" href={(hero.id |> strInt) ++ "/edit"} /> </td>
     </tr>;
 
   let heroesList = List.map(toElement, heroes);
 
-  <div>
-    <table>
-      <tbody> {heroesList |> Array.of_list |> ReasonReact.array} </tbody>
-    </table>
-  </div>;
+  <div> <table> <tbody> {heroesList |> arrEl} </tbody> </table> </div>;
 };
