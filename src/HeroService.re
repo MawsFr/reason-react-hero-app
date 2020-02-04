@@ -9,4 +9,3 @@ let heros: list(hero) = [
 let getAll = () => heros;
 let add = (hero: hero, heros: list(hero)) => List.append(heros, [hero]);
 let get = id => List.find(hero => hero.id == id, heros);
-/* let remove = hero =>  */

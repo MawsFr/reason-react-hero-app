@@ -5,8 +5,8 @@ open Utils;
 let make = (~heroes: list(hero)) => {
   let toElement = hero =>
     <tr key={hero.id |> strInt}>
-      <td> {hero.name ++ " " |> str} </td>
-      <td> <Link name="Show " href={(hero.id |> strInt) ++ "/show"} /> </td>
+      <td> {hero.name |> str} </td>
+      <td> <Link name="Show" href={(hero.id |> strInt) ++ "/show"} /> </td>
       <td> <Link name="Edit" href={(hero.id |> strInt) ++ "/edit"} /> </td>
     </tr>;
 
