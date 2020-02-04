@@ -15,7 +15,7 @@ let useRoute = () => {
 
   switch (path) {
   | [id, "edit"] => EditHero(id |> intStr)
-  | [id] => ShowHero(id |> intStr)
+  | [id, "show"] => ShowHero(id |> intStr)
   | [] => Home
   | _ => NotFound
   };
