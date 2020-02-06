@@ -4,9 +4,9 @@ open Utils;
 let make = (~id) => {
   let hero = HeroService.get(id);
   <>
-    <h2> {"Edition de " ++ hero.name |> str} </h2>
+    <h2> {"Edition de " ++ hero.nom |> str} </h2>
     <div> {hero.id |> intEl} </div>
-    <div> {hero.name |> str} </div>
+    <div> {hero.nom |> str} </div>
     <img src={"/images/" ++ hero.image} />
   </>;
 };

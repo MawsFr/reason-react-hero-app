@@ -3,4 +3,4 @@ let style = document##createElement("style");
 document##head##appendChild(style);
 style##innerHTML #= Style.style;
 
-ReactDOMRe.renderToElementWithId(<HeroApp />, "root");
+ReactDOMRe.renderToElementWithId(<App />, "root");

@@ -3,7 +3,7 @@ type nom = string;
 
 type hero = {
   id,
-  name: nom,
+  nom,
   puissance: option(int),
   image: string,
 };
