@@ -76,6 +76,21 @@ nav a.active {
     color: #039be5;
 }
 
+.center {
+  max-width: 500px;
+  margin: auto;
+}
+
+.info {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
 /* everywhere else */
 * {
     font-family: Arial, Helvetica, sans-serif;
