@@ -5,6 +5,7 @@
 
 ```bash
 - git clone https://github.com/MawsFr/reason-react-hero-app.git
+- npm install
 - npm start
 # in another tab
 - npm run server
