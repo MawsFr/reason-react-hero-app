@@ -1,9 +1,9 @@
 type id = int;
-type nom = string;
+type name = string;
 
 type hero = {
   id,
-  nom,
+  name,
   puissance: option(int),
   image: string,
 };
