@@ -1,5 +1,5 @@
 {
-  "name": "reason-react-simple-routing-example",
+  "name": "reason-react-hero-app",
   "version": "0.1.0",
   "scripts": {
     "build": "bsb -make-world",
@@ -13,9 +13,10 @@
   "keywords": [
     "ReasonML",
     "ReasonReact",
-    "ReasonReactRouting"
+    "ReasonReactRouting",
+    "Hero App"
   ],
-  "author": "Matt Batman",
+  "author": "Mustapha NEZZARI",
   "license": "MIT",
   "dependencies": {
     "@glennsl/bs-json": "^5.0.2",
