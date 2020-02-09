@@ -12,7 +12,7 @@ let make = (~id) => {
         switch (action) {
         | Loaded(data) => data
         },
-      {id: 0, name: "Loading ...", power: None, image: None},
+      {id: 0, name: "Loading ...", power: None, image: None} /* TODO Change this to new type (like Loading or else) */
     );
 
   React.useEffect0(() => {
