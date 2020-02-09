@@ -1,5 +1,5 @@
 
-# React Hero app (not finished yet)
+# ReasonReact (ReasonML) Hero app demo
 
 ## Launching
 
