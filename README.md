@@ -13,6 +13,7 @@
 ```
 
 ## TODO
+- Use an new type for loading hero (Show.re and Edit.re)
 - Finish the edit page
 - Add css with another technique
 
